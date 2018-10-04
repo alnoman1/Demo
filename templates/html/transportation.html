@@ -1,0 +1,95 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Transportation Cipher</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+    <div id="wrapper">
+
+        <div id="main">
+            <div class="inner">
+
+                <header id="header">
+                    <strong>Transportation Cipher</strong>
+                </header>
+
+                <section>
+                    <header class="main">
+                        <h1>Transportation Cipher</h1>
+                    </header>
+
+                    <span class="image main"><img src="{% static 'images/picture_7.png' %}" alt="" /></span>
+
+                    <p>In cryptography, a transposition cipher is a method of encryption by which
+                    the positions held by units of plaintext
+                    (which are commonly characters or groups of characters)
+                     are shifted according to a regular system,
+                     so that the ciphertext constitutes a permutation of the plaintext.
+                    </p>
+
+                    <textarea name="name" rows="6" cols="80"></textarea>
+                    <table class="button_position">
+                        <tr>
+                            <td> <button type="button" name="button"> Encrypt </button> </td>
+                            <td> <button type="button" name="button2"> Decrypt </button> </td>												</tr>
+                    </table>
+                    <textarea name="name" rows="6" cols="80"></textarea>
+                    <table class="button_position">
+                        <tr>
+                            <td> <button type="button" name="button"> Send to Email </button> </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div class="inner">
+
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="{% url 'index' %}">Homepage</a></li>
+                        <li><a href="{% url 'ceaser' %}">Ceaser Cipher</a></li>
+                        <li><a href="{% url 'hill' %}">Hill Cipher</a></li>
+                        <li><a href="{% url 'vernam' %}">Vernam Cipher</a></li>
+                        <li><a href="{% url 'transportation' %}">Transportation Cipher</a></li>
+                        <li><a href="{% url 'file' %}">File Encryption</a></li>
+                        <li><a href="{% url 'image' %}">Image Encryption</a></li>
+                        <li><a href="{% url 'video' %}">Video Encryption</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <header class="major">
+                        <h2>Contact</h2>
+                    </header>
+                    <ul class="contact">
+                        <li class="fa-envelope-o"><a href="#">badhonngc@gmail.com</a></li>
+                        <li class="fa-phone">+8801795568556</li>
+                        <li class="fa-home">G.M. Bari, Uttar Badda<br />
+                            Dhaka 1212</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+	</body>
+</html>

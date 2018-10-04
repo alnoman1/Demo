@@ -1,0 +1,103 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Vernam Cipher</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+    <div id="wrapper">
+
+        <div id="main">
+            <div class="inner">
+
+                <header id="header">
+                    <strong>Vernam Cipher</strong>
+                </header>
+
+                <section>
+                    <header class="main">
+                        <h1>Vernam Cipher</h1>
+                    </header>
+
+                    <span class="image main"><img src="{% static 'images/picture_8.jpg' %}" alt="" /></span>
+
+                    <p>The Vernam Cipher is based on the principle that each plaintext character
+                     from a message is 'mixed' with one character from a key stream. If a
+                     truly random key stream is used, the result will be a truly 'random'
+                     ciphertext which bears no relation to the original plaintext. In that
+                     case the cipher is similar to the unbreakable One-Time Pad (OTP).
+                     As it was generally used with teleprinters and 5-level punched tape,
+                     the system is also known as One-Time Tape or OTT.
+                    </p>
+
+                     <p>The Vernam cipher is a symmetrical stream cipher,
+                        in which is the open text XORed with a prearranged random input (noise) of the
+                        same length.</p>
+
+                    <textarea name="name" rows="6" cols="80"></textarea>
+                    <table class="button_position">
+                        <tr>
+                            <td> <button type="button" name="button"> Encrypt </button> </td>
+                            <td> <button type="button" name="button2"> Decrypt </button> </td>												</tr>
+                    </table>
+                    <textarea name="name" rows="6" cols="80"></textarea>
+                    <table class="button_position">
+                        <tr>
+                            <td> <button type="button" name="button"> Send to Email </button> </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div class="inner">
+
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="{% url 'index' %}">Homepage</a></li>
+                        <li><a href="{% url 'ceaser' %}">Ceaser Cipher</a></li>
+                        <li><a href="{% url 'hill' %}">Hill Cipher</a></li>
+                        <li><a href="{% url 'vernam' %}">Vernam Cipher</a></li>
+                        <li><a href="{% url 'transportation' %}">Transportation Cipher</a></li>
+                        <li><a href="{% url 'file' %}">File Encryption</a></li>
+                        <li><a href="{% url 'image' %}">Image Encryption</a></li>
+                        <li><a href="{% url 'video' %}">Video Encryption</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <header class="major">
+                        <h2>Contact</h2>
+                    </header>
+                    <ul class="contact">
+                        <li class="fa-envelope-o"><a href="#">badhonngc@gmail.com</a></li>
+                        <li class="fa-phone">+8801795568556</li>
+                        <li class="fa-home">G.M. Bari, Uttar Badda<br />
+                            Dhaka 1212</li>
+									</ul>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+
+</html>

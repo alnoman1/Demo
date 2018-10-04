@@ -1,0 +1,87 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Encrption and Decryption</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+    <div id="wrapper">
+
+        <div id="main">
+            <div class="inner">
+
+                <header id="header">
+                    <strong>Encrption and Decryption</strong>
+                </header>
+
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h1>What is encryption<br/></h1>
+                        </header>
+                        <p>Encryption, is the process of changing information in such a way as to make it
+                            unreadable by anyone except those possessing special knowledge
+                            (usually referred to as a "key")
+                            that allows them to change the information back to its original, readable form.</p>
+                        <header>
+                            <h1>Why encryption needed<br/></h1>
+                        </header>
+                        <p>Encryption is important because it allows you to securely protect data that you don't want anyone else to have access to.
+                            Espionage uses encryption to securely protect folder contents, which could contain emails, chat histories,
+                            tax information, credit card numbers, or any other sensitive information.</p>
+                    </div>
+                    <span class="image object">
+                        <img src="{% static 'images/picture_1.jpg' %}" alt="" />
+                    </span>
+                </section>
+
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div class="inner">
+
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="{% url 'index' %}">Homepage</a></li>
+                        <li><a href="{% url 'ceaser' %}">Ceaser Cipher</a></li>
+                        <li><a href="{% url 'hill' %}">Hill Cipher</a></li>
+                        <li><a href="{% url 'vernam' %}">Vernam Cipher</a></li>
+                        <li><a href="{% url 'transportation' %}">Transportation Cipher</a></li>
+                        <li><a href="{% url 'file' %}">File Encryption</a></li>
+                        <li><a href="{% url 'image' %}">Image Encryption</a></li>
+                        <li><a href="{% url 'video' %}">Video Encryption</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <header class="major">
+                        <h2>Contact</h2>
+                    </header>
+                    <ul class="contact">
+                        <li class="fa-envelope-o"><a href="#">badhonngc@gmail.com</a></li>
+                        <li class="fa-phone">+8801795568556</li>
+                        <li class="fa-home">G.M. Bari, Uttar Badda<br />
+                            Dhaka 1212</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+
+</html>

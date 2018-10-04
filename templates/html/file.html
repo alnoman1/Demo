@@ -1,0 +1,98 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>File Encryption</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+    <div id="wrapper">
+
+        <div id="main">
+            <div class="inner">
+
+                <header id="header">
+                    <strong>File Encryption</strong>
+                </header>
+
+                <section>
+                    <header class="main">
+                        <h1>File Encryption</h1>
+                    </header>
+
+                    <span class="image main"><img src="{% static 'images/picture_3.jpg' %}" alt="" /></span>
+                    <h2>Why file encryption is important?</h2>
+
+                    <p>Encryption is one component of a successful security strategy.
+                        Successful encryption is wholly dependent on robust passwords or
+                        pass phrases called “keys.” <br>
+										<br>
+                    The Encrypting File System (EFS) on Microsoft Windows is a feature introduced in
+                        version 3.0 of NTFS that provides filesystem-level encryption.
+                        The technology enables files to be transparently encrypted to
+                        protect confidential data from attackers with physical access
+                        to the computer.
+                    </p>
+
+                    <label for="c">File</label>
+                    <input id="c" name="c" type="file" aria-required="true">
+                    <table class="button_position">
+                        <tr>
+                            <td> <button type="button" name="button"> Encrypt </button> </td>
+                            <td> <button type="button" name="button2"> Decrypt </button> </td>
+                            <td> <button type="button" name="button"> Send to Email </button> </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div class="inner">
+
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="{% url 'index' %}">Homepage</a></li>
+                        <li><a href="{% url 'ceaser' %}">Ceaser Cipher</a></li>
+                        <li><a href="{% url 'hill' %}">Hill Cipher</a></li>
+                        <li><a href="{% url 'vernam' %}">Vernam Cipher</a></li>
+                        <li><a href="{% url 'transportation' %}">Transportation Cipher</a></li>
+                        <li><a href="{% url 'file' %}">File Encryption</a></li>
+                        <li><a href="{% url 'image' %}">Image Encryption</a></li>
+                        <li><a href="{% url 'video' %}">Video Encryption</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <header class="major">
+                        <h2>Contact</h2>
+                    </header>
+                    <ul class="contact">
+                        <li class="fa-envelope-o"><a href="#">badhonngc@gmail.com</a></li>
+                        <li class="fa-phone">+8801795568556</li>
+                        <li class="fa-home">G.M. Bari, Uttar Badda<br />
+                            Dhaka 1212</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+	</body>
+
+</html>
